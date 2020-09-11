@@ -11,7 +11,7 @@ abstract class OtherDataService{
 
     abstract OtherDomain delete(Long id)
 
-//    @Transactional
+    @Transactional
     void deleteIf(Long id){
         if (find(id).name == 'blah'){
             delete(id)
